@@ -105,7 +105,14 @@ theme: hexo-theme-matery
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: rsync
+  host: 43.143.246.2
+  user: root
+  root: /
+  port: 22
+  delete: true
+  verbose: true
+  ignore_errors: true
 
 search:
   path: search.xml
